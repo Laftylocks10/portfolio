@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            @keyframes slideup {
+                from {top: 15em; opacity: 0;}
+                to   {top: 0em;; opacity: 1;}
+            }
+            @keyframes slideupspec {
+                from {top: 15em; opacity: 0;}
+                to   {top: -78px; opacity: 1;}
+            }
+            @font-face {
+                font-family: Anta-Regular;
+                src: url('antareg.ttf');
+            }
+            @keyframes fadein {
+                0% {opacity: 0%; right: 5em; left: 0em}
+                25% {opacity: 5%; right: 5em;  left: 0em}
+                30% {opacity: 1%; right: 5em;  left: 0em}
+                50% {opacity: 25%; right: 5em;  left: 0em}
+                70% {opacity: 35%; right: 5em;  left: 0em}
+                80% {opacity: 35%; right: 5em; left: 0em}
+                90% {opacity: 100%; right: 5em; left: 0em}
+                99% {opacity: 100%; right: 5em; left: 0em}
+                100% {opacity: 95%; right: 5em; left: 0em}
+            }
+            @keyframes specanim {
+                0%   {top: 200px; opacity: 0;}
+                100% {top: 0px; opacity: 1;}
+            }
+            @keyframes leftanim {
+                0%   {right: 100%; opacity: 0;}
+                50%  {right: 0%; opacity: 0;}
+                100% {opacity: 1;}
+            }     
+            @keyframes someone {
+                from {right: 25em; opacity: 0;}
+                to {right: 0em; opacity: 1;}
+            }
+            
+            .info:hover {color: rgb(242, 0, 255); transition-duration: 1s;}
+            aside #left {opacity: 0; float: left; width: 33%; position: relative; animation: slideup 2s forwards; animation-delay: 1s;}
+            aside #mid {opacity: 0; margin: 0 auto; width: 33% ; position: relative; animation: slideup 2s forwards; animation-delay: 2s;}
+            aside #right {opacity: 0; float: right; width: 33%; position: relative; animation: slideupspec 2s forwards; animation-delay: 3s;}
+            aside ul .info {font-size: 20px; margin-bottom: 10px; color: #00ffb7;}
+            aside p {width: 80%; font-size: 20px;}
+            aside ul li {list-style-type: none;}
+            hr {border: 1px solid rgb(0, 200, 255); width: 150%; position: relative ; top: 40px; margin: auto;}
+            coolie {animation: specanim 3s;}
+            nav {position: fixed;right:275px; z-index: 2; ;bottom: 30px; border-radius: 5em;background: gray; opacity: 0.5; text-align: center; width: 50%; margin: auto;}
+            nav ul li {display:inline-block;}
+            li img:hover {background-color: #00ffb7; transition-duration: 1s;}
+            li img {border-radius: 50%; width: 60px; height: 60px; margin-left: 1.75em; padding: 1em; cursor: pointer}
+            body {position: relative; background-color: rgb(38, 10, 63); color: whitesmoke; font-family: Anta-Regular, sans-serif}
+            special {color: linear-gradient(to right, purple, cyan, blue);}
+            p#topright {font-size: 2em; float:left}
+            purp {color:#ac0090;}
+            .aside2 {float:right; bottom: 300px; position: relative;}
+            subheading {font-size: 30px; left: 150px;  position: relative;}
+            purph {font-size: 40px;color:rgb(172, 0, 144); left: 50px;  position: relative;}
+            .yay {position: relative;float: right; animation: fadein 5s; bottom: 27em}     
+            #leftext {animation: leftanim 4s; font-size: 1.5em; width: 40%}
+            p#sub {font-size: 3em; padding-left: 0.7em; margin-top: 0em; width: 40%}
+            article {font-size: 5em; clear: both; margin-left: 0.1em; margin-top: 0.1em;}
+            a button {font-family: Anta-Regular, sans-serif; margin-top: 1em;float:right; font-size: 1.5em; border-radius: 1em; padding: 0.5em; background-image: linear-gradient(to right, blue, rgb(218, 68, 255), rgb(255, 0, 166));}
+            .aside1 {float: left;; position: relative; animation: someone 3s}
+            #cooler {margin-right: 35em; margin-bottom: 2em;}
+            button:hover {cursor: pointer; background-image: linear-gradient(to right, rgb(0, 179, 255), rgb(140, 68, 255), rgb(255, 0, 149));}
+        </style>
+    </head>
+    <body>
+        <coolie>
+        <p id="topright"><special>Cool</special> <br> Nickname!</p>
+        <a><button>Join the journey!</button></a>
+        <article>Luther <br> Owoyemi <br></article>
+        <p id="sub">I am a <purp>learner!</purp> </p>
+        <p id="leftext">It's crazy that people think being crazy is crazy. Like honestly so crazy, they're just crazy, okay? They're crazy!</p>
+        </coolie>
+        <img class="yay" src="https://clipartcraft.com/images/html5-logo-png-transparent-5.png" width="400px" height="400px">
+        <nav>
+            <ul>
+                <li><a href="#topright"><img src="hom.png" ></li></a>
+                <li><a href="#profile"><img src="profile.png"></li></a>
+                <li><img src="whatdo.png"></li>
+            </ul>
+        </nav>
+        <aside class="aside1"><img src="su.png" height="512px" width="400px"></aside>
+        <aside class="aside2">
+            <purph id="profile">Coding Profile</purph> <br>
+            <subheading>I am a Grade 7 Learner</subheading>
+            <p>I have been learning coding for quite some time. I did a little LUA in roblox once, too..</p>
+            <ul>
+                <div id="left">
+                    <li>As of now, Learning...</li>
+                    <li class="info">CSS, Html and Python; <br> Learnt a little SQL and LUA</li>
+                </div>
+                <div id="mid">
+                    <li>Journey Length</li>
+                    <li class="info"> Started at Grade 5; <br> 2 years so far</li>
+                </div>
+                <div id="right">
+                    <li>Scope of Aspirations</li>
+                    <li class="info">I dream to be a Famous Game Developer</li>
+                </div>
+                <br>
+                <a href="https://api.whatsapp.com/send/?phone=2348033240165&text&type=phone_number&app_absent=0"><button>Contact Me on Whatsapp!</button></a>
+            </ul>
+        </aside>
+    </body>
+</html>
